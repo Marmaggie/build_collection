@@ -9,6 +9,10 @@ body{
     
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+    min-height: 100vh; 
+    background-attachment: fixed;
     animation: colorChange 7s ease alternate infinite;
 
 }
@@ -28,7 +32,7 @@ body{
 
 header{
     background: linear-gradient(#3ACAAD, #005562);
-    min-height: 300px;
+    min-height: 200px;
 }
 
 header img {
@@ -43,7 +47,7 @@ header h1{
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 .custom-shape-divider-top-1784916588 {
@@ -66,9 +70,88 @@ header h1{
     fill: #005562;
 }
 
+section {
+  margin: 0px auto;
+  width: 70%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #005562;
+}
+
+section h2{
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+section h3{
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+section p{
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/************List Styling*****************/
+.text-container{
+  margin: 0px auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  color: #3ACAAD;
+}
+
+.text-box{
+  border-color: #3ACAAD;
+  border-style: solid;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+
+/************Gallery stuff***************/
+
+.image-container {
+  margin: 0px auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: grey;
+  width: 80%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
 
 
 /**FONT**/
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .alegreya-sans-thin {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 100;
