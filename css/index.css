@@ -108,7 +108,7 @@ section p{
   padding-bottom: 2rem;
 }
 
-/************List Styling*****************/
+
 .text-container{
   margin: 0px auto;
   margin-top: 1rem;
@@ -119,6 +119,16 @@ section p{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.text-container a{
+  text-decoration: none;
+  color: #3ACAAD;
+  font-size: 2rem;
+}
+
+.text-container a:hover{
+  color: #f1fdff;
 }
 
 .text-box{
@@ -136,13 +146,13 @@ section p{
 .text-box:nth-child(3) { animation-delay: 0.45s; }
 .text-box:nth-child(4) { animation-delay: 0.6s; }
 
-/* Pause all animations on hover */
+
 .text-box:hover {
   animation-play-state: paused;
   cursor: pointer;
 }
 
-/* Up and down motion */
+
 @keyframes verticalWave {
   0%, 100% {
     transform: translateY(0);
@@ -151,6 +161,8 @@ section p{
     transform: translateY(-20px);
   }
 }
+
+
 
 
 
