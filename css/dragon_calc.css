@@ -1,17 +1,96 @@
 body{
-   background-color: #510063;
+    background-color: #510063;
     background: linear-gradient(180deg,rgba(81, 0, 99, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
     background-size: cover;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
+
+
+
+/*********************Home Screen*********************/
 
 header{
     margin: 0px auto;
     width: 50%;
-    text-align:center;
+    padding-top: 12rem;
 }
 
-.logo img {
+.logo{
     margin: 0px auto;
-    width: 100%;
+    width: 80%;
+    padding: 0px;
 }
+
+.logo img{
+    max-width: 100%;
+}
+
+.title {
+    text-align:center;
+    color:#510063;
+    padding: 0.5px;
+    margin: 0px auto;
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 1rem;
+    background-color: grey;
+    border-radius: 100%;
+    max-width: 15%;
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes floatY {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.logo, .title {
+    animation: floatY 2s ease-in-out infinite;
+    will-change: transform;
+}
+
+.logo:hover, .logo:focus, .title:hover, .title:focus {
+    animation-play-state: paused;
+}
+
+.title:hover{
+    cursor: pointer;
+    color: #d1d1d1;
+    width: 20%;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .logo, .title {
+        animation: none;
+        transition: none;
+    }
+}
+
+/*********************Calculator*********************/
+
+.background{
+    background-color: #261b28;
+    width: 500px;
+    height: 700px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/*********************FONTS*********************/
+.metamorphous-regular {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
