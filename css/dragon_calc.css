@@ -91,12 +91,13 @@ a {
 /*********************Calculator*********************/
 
 .background{
-    background-color: #261b28;
-    width: 500px;
-    height: 700px;
+    background-color: #fcecff;
+    width: 50%;
+    height: 600px;
     margin: 0px auto;
     text-align: center;
     padding: 20px;
+    padding-top: 500px;
 }
 
 /*********************FONTS*********************/
