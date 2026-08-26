@@ -6,8 +6,6 @@ body{
     min-height: 100vh;
 }
 
-
-
 /*********************Home Screen*********************/
 
 header{
@@ -39,7 +37,6 @@ header{
     border-radius: 100%;
     box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.5);
     width: 85px;
-
 }
 
 a {
