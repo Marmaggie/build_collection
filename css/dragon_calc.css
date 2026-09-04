@@ -6,8 +6,6 @@ body{
     min-height: 100vh;
 }
 
-/*********************Home Screen*********************/
-
 header{
     margin: 0px auto;
     width: 50%;
@@ -87,25 +85,73 @@ a {
     pointer-events: none;
 }
 
-
-/*********************Calculator*********************/
-
-.background{
-    background-color: #fcecff;
-    width: 50%;
-    height: 600px;
-    margin: 0px auto;
-    text-align: center;
-    padding: 20px;
-    padding-top: 500px;
+.calculator-wrapper {
+    position: relative;
+    width: 340px;
+    margin: 100px auto 0;
 }
 
-/*********************FONTS*********************/
+.background {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    padding: 20px;
+    background-color: #fcecff;
+}
+
+.dragon-border {
+    position: absolute;
+    top: -300px;
+    left: -159px;
+    width: 700px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#display-text {
+    margin: 0;
+    padding: 15px;
+
+    background-color: white;
+    border-radius: 8px;
+
+    text-align: right;
+    font-size: 2rem;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+#buttons button {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #510063;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: #72008a;
+}
+
+#equals{
+    grid-column: span 4;
+    background-color: #ff00ff;
+}
 .metamorphous-regular {
   font-family: "Metamorphous", serif;
   font-weight: 400;
   font-style: normal;
 }
-
-
 
